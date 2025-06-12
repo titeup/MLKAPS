@@ -34,5 +34,5 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --statistics
     - name: Test with pytest
       run: |
-        export MLKAPS_IS_IN_DOCKER="True" 
+        export MLKAPS_IS_IN_DOCKER="True"
         pytest

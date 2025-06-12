@@ -39,7 +39,7 @@ class TestFunctionPath:
 
         path2 = FunctionPath(pathlib.Path(__file__).parent / "dummy_module.py:test_can_init_global")
         f = path2.to_function().get_callable_function()
-        assert f(None)["r"] == 42 # If this is true, this means that the module code 
+        assert f(None)["r"] == 42  # If this is true, this means that the module code
         # was correctly executed during the import
 
     def test_can_change_function_name(self):

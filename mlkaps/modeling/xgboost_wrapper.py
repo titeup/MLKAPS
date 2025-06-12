@@ -14,6 +14,7 @@ import pandas as pd
 import xgboost
 from mlkaps.modeling.model_wrapper import ModelWrapper
 
+
 class XGBoostModelWrapper(ModelWrapper, wrapper_name="xgboost"):
     """
     Wrapper for XGBoost regressor.
